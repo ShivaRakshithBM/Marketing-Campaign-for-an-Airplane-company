@@ -67,6 +67,7 @@ The major tasks of clustering evaluation included the following:
 Also, used the elbow curve method which is based on the observation that increasing the number of clusters can help to reduce the sum
 of intra cluster variance of the clusters
 3) Also used cross validation to get the best number of clusters
+4) Silhoutte coefficient is calculated 
 
 
 
