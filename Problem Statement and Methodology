@@ -1,0 +1,25 @@
+# Marketing-Campaign-for-an-Airplane-company
+
+Problem Statment: The marketing team did not have good insights about their customers and were wanting good groups of customers so that
+each of them can be targeted in a customized manner
+
+Followed CRISP methodology for data mining process. It had 6 stages in it:
+
+1) Business Understanding
+The client did not want customers with different flying patterns to be in the same group.
+Each group of customers could be assigned to a different manager and different strategies can be applied. The partitioning of the customers 
+were not done by humans because it ws very tough, time cousnuming and not cost effective. this would enable enhancedd customer relationship
+management too.
+
+2) Data Understanding
+
+The client wanted non - hierarchial groups. All the customers data were treated at the same level. The clients also wanted the customers 
+to be in mutually exclusive groups
+HAd around 25 variables of the customers like - Customers frequency of travel in ayear, preferered set of flights, preferened set of seat
+allocation, preferred number of bags they carry, type of check in method they use, type of security checks they use, number of states within 
+the country they travel to, number of countries they travel to outside their own country, do they like insurance or not? etc
+
+3) Data preparation
+
+
+
