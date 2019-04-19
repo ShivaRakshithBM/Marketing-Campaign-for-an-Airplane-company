@@ -60,6 +60,14 @@ MAtrix of dissimilarity is computed using 2 metrics:
 1) The euclidean distances, that are the root sum of square distances
 Manhattan distancesthe sum of absolute differences
 
+Evaluation:
+The major tasks of clustering evaluation included the following:
+1) Assessing clustering tendancy: Calculated the Hopkins statistic and it was < 0.5, indicating statistically significant clusters
+2) To determine the number of clusters: Simplest way used is sqaure.root(n/2) where n is the number of data points
+Also, used the elbow curve method which is based on the observation that increasing the number of clusters can help to reduce the sum
+of intra cluster variance of the clusters
+3) Also used cross validation to get the best number of clusters
+
 
 
 
