@@ -21,5 +21,47 @@ the country they travel to, number of countries they travel to outside their own
 
 3) Data preparation
 
+4) Modelling:
+
+Used Kmeans and K mediods clustering to start off as these are non hierarchial clustering algorithms. Later tried out DBSCAN algorithm, 
+followed by hierarchial clustering to evaluate other options
+
+K means: Input are k: number of clusters
+D: a data set containing n objects
+
+Output: A set of k clusters
+Algorithm / Method followed:
+
+Arbitrarily choose k objects from D as tge initial cluster centers
+Repeat:
+  re(assign) each object to the cluster to which the object is the most similar based on the distance between the mean and object
+  update the cluster means, that is to calculate the men value of the objects for each cluster
+Until No change;
+
+K Mediods:
+Input: K = Number of clusters
+D: DAta set containing the n objects (5000 customers)
+ 
+Output: K clusters
+
+algorithm / Method
+
+Build phase:
+1) Select k objects to become the mediods
+2) Calculate the dissimilarity matrix 
+3) Assign every object to the closest mediod
+
+Swap phase:
+4) For each cluster seacr if any object of the cluster decreases the average dissimilarity coefficient; if it does, select
+the object that decreases this coiefficient the most as the mediod for this cluseter
+5) If at lease one mediod has changed go to 3) or else end algorithm
+
+MAtrix of dissimilarity is computed using 2 metrics:
+1) The euclidean distances, that are the root sum of square distances
+Manhattan distancesthe sum of absolute differences
+
+
+
+
 
 
