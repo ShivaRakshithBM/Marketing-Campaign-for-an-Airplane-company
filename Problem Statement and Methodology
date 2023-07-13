@@ -1,4 +1,4 @@
-# Marketing-Campaign-for-an-Airplane-company
+# Marketing Campaign for an Airplane company
 
 Problem Statment: The marketing team did not have good insights about their customers and were wanting good groups of customers so that
 each of them can be targeted in a customized manner
@@ -15,19 +15,22 @@ management too.
 
 The client wanted non - hierarchial groups. All the customers data were treated at the same level. The clients also wanted the customers 
 to be in mutually exclusive groups
-HAd around 25 variables of the customers like - Customers frequency of travel in ayear, preferered set of flights, preferened set of seat
+Had around 25 variables of the customers like - Customers frequency of travel in ayear, preferered set of flights, preferened set of seat
 allocation, preferred number of bags they carry, type of check in method they use, type of security checks they use, number of states within 
 the country they travel to, number of countries they travel to outside their own country, do they like insurance or not? etc
 
 3) Data preparation
+Missing value imputation was performed
+Standard scaler normalization of numeric variables was done
 
 4) Modelling:
 
-Used Kmeans and K mediods clustering to start off as these are non hierarchial clustering algorithms. Later tried out DBSCAN algorithm, 
-followed by hierarchial clustering to evaluate other options
+Used K-means and K-medoids clustering to start off as these are non hierarchial clustering algorithms. Later tried out DBSCAN (Density Based Scanning of Applications with Noise) algorithm, 
+followed by hierarchial clustering (Agglomerative bottoms-up approach) to evaluate other options
 
-K means: Input are k: number of clusters
-D: a data set containing n objects
+K means Input are: 
+a) k: number of clusters
+b) D: a data set containing n objects
 
 Output: A set of k clusters
 Algorithm / Method followed:
@@ -38,13 +41,13 @@ Repeat:
   update the cluster means, that is to calculate the men value of the objects for each cluster
 Until No change;
 
-K Mediods:
-Input: K = Number of clusters
-D: DAta set containing the n objects (5000 customers)
+K-Medoids Input are: 
+K: Number of clusters
+D: Data set containing the n objects (5000 customers)
  
 Output: K clusters
 
-algorithm / Method
+Algorithm / Method used:
 
 Build phase:
 1) Select k objects to become the mediods
@@ -56,14 +59,15 @@ Swap phase:
 the object that decreases this coiefficient the most as the mediod for this cluseter
 5) If at lease one mediod has changed go to 3) or else end algorithm
 
-MAtrix of dissimilarity is computed using 2 metrics:
+Matrix of dissimilarity is computed using 2 metrics:
 1) The euclidean distances, that are the root sum of square distances
-Manhattan distancesthe sum of absolute differences
+2) Manhattan distancesthe sum of absolute differences
 
 Evaluation:
 The major tasks of clustering evaluation included the following:
 1) Assessing clustering tendancy: Calculated the Hopkins statistic and it was < 0.5, indicating statistically significant clusters
 2) To determine the number of clusters: Simplest way used is sqaure.root(n/2) where n is the number of data points
+
 Also, used the elbow curve method which is based on the observation that increasing the number of clusters can help to reduce the sum
 of intra cluster variance of the clusters
 3) Also used cross validation to get the best number of clusters
